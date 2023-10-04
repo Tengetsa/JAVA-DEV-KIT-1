@@ -16,7 +16,6 @@ public class ClientGUI extends JFrame {
     JButton btnLogin, btnSend;
     JTextField ipAddress, port, userName, message, textSendField;
     JPasswordField password;
-    private JTextField d;
 
     public ClientGUI() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -101,7 +100,6 @@ public class ClientGUI extends JFrame {
      * @return возвращаем нововведенные данные.
      */
     private JTextField hideFields(JTextField d) {
-        this.d = d;
         d.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
